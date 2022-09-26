@@ -7,13 +7,13 @@ using namespace std;
 
 int main()
 {
-    int SIZE = 1000;
+    int SIZE = 100;
     Matrix a(SIZE);
     Matrix b(SIZE);
     Matrix c(SIZE, 1);
 
     double total_time;
-    int count = 1;
+    int count = 10;
 
     srand(time(NULL));
     struct timeval start;
@@ -36,7 +36,8 @@ int main()
     }
 
     // c.display();
-    cout << "total_time:" << total_time << endl;
+    double avreage_time = total_time / count;
+    cout << "avreage_time:" << avreage_time << endl;
 
     a.del();
     b.del();
